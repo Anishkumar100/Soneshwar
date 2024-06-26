@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<style>
+    .neon-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #000;
+    border: 2px solid #9400D3; /* Dark purple border */
+    color: #9400D3; /* Dark purple text */
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "monoton";
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.neon-button::before,
+.neon-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff00ff, #9400D3);
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.neon-button::before {
+    filter: blur(10px);
+    opacity: 0.3;
+}
+
+.neon-button:hover::before,
+.neon-button:hover::after {
+    opacity: 1;
+}
+
+.neon-button:hover {
+    color: #000;
+    background: linear-gradient(45deg, #ff00ff, #9400D3);
+    box-shadow: 0 0 20px #ff00ff, 0 0 30px #9400D3;
+}
+
+@media screen and(max-width:600px)
+{
+#text
+{
+display: none;
+}
+}
+</style>
+</head>
+<body style="margin:0px;height:0px;">
+    <div >
+        <iframe src='https://my.spline.design/vintageiscoolv1-87f7ae8b9776088b5c7903ab21f6eeda/' frameborder='0' width='100%' height='100%' style=" position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;" ></iframe>
+    </div>
+
+    <div style="display: flex;flex-direction: column;align-items: center; justify-content: center;position: fixed; top:80% ;left:40%" >
+        <p id="text" style=" color:RGB(84, 84, 91);font-family:roboto ;font-size: 18px; ">Click Here To Know About Me</p>
+        <a href=" home.html" target="_self">
+    <button class="neon-button" >Click Here </button>   </a> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+       
+       .hover-effect {
+            display: inline;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .hover-effect::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: #ff0000;
+            visibility: hidden;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out, visibility 0s 0.25s;
+        }
+
+        .hover-effect:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+            transition: transform 0.25s ease-out;
+        }
+
+    
+        
+
+      
+
+
+        .box {
+        color:white;
+
+
+        font-family: caudex;
+        font-size: 22px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.568);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin:30px
+}
+.neon-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #000;
+    border: 2px solid #9400D3; /* Dark purple border */
+    color: #9400D3; /* Dark purple text */
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "monoton";
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    font-family: caudex;
+}
+
+.neon-button::before,
+.neon-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff00ff, #9400D3);
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.neon-button::before {
+    filter: blur(10px);
+    opacity: 0.3;
+}
+
+.neon-button:hover::before,
+.neon-button:hover::after {
+    opacity: 1;
+}
+
+.neon-button:hover {
+    color: #ffffff;
+    background: linear-gradient(45deg, #ff00ff, #9400D3);
+    box-shadow: 0 0 20px #ff00ff, 0 0 30px #9400D3;
+}
+
+
+/* Hover effect */
+.box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 24px #ff7d7d3b;
+}
+        
+    </style>
+</head>
+<body style="margin:0px;background-color: black;">
+
+   <div style="display: flex;justify-content: center;">
+  
+    <p class="hover-effect"style="text-align:center;font-family:caudex; font-size:60px">My Music</p>
+    </div>
+
+    <div>
+        <video src="Chevrons-moving-down.mp4" autoplay loop  muted style=" position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    object-fit: cover;opacity: 0.1;"></video>
+    </div>
+
+
+    <div style="display: flex; justify-content:space-around;flex-direction: row; flex-wrap: wrap; text-decoration: none;">
+
+        <a href=" dragon.html" style="text-decoration: none;" target="_self"> 
+<div class="box" id="box1" style="flex-direction:column; justify-content: center;align-items: center; width:300px">
+<img src="Dragon.jpg" width="300px" style="position: relative;;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+<p style="text-align:center;position: relative;">DRAGON</p>
+</div>
+        </a>
+
+        <a href=" crush.html" target="_self" style="text-decoration: none;"> 
+<div class="box" id="box2" style="flex-direction:column; justify-content: center;align-items: center; margin-left:30px;width:300px">
+    <img src="Crush.jpg" width="300px" height="300px" style="position: relative;;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+    <p style="text-align:center;position: relative;">CRUSH MUDHAL KADHAL VARAI</p>
+    </div>
+        </a>
+
+        <a href=" scorpion.html" target="_self" style="text-decoration: none;"> 
+<div class="box" id="box3" style="flex-direction:column; justify-content: center;align-items: center; margin-left:30px;width:300px">
+        <img src="Scorpion.jpg" width="300px" style="position: relative;;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+        <p style="text-align:center;position: relative;">SCORPION</p>
+        </div>
+        </a>
+
+
+        <a href=" angel.html" target="_self" style="text-decoration: none;"> 
+<div class="box" id="box4" style="flex-direction:column; justify-content: center;align-items: center; margin-left:30px;width:300px">
+            <img src="Angel.jpg" width="300px" style="position: relative;;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+            <p style="text-align:center;position: relative;">Angel</p>
+            </div>
+        </a>
+
+        <a href=" gangster.html" target="_self" style="text-decoration: none;"> 
+<div class="box" id="box5" style="flex-direction:column; justify-content: center;align-items: center; margin-left:30px;width:300px">
+                <img src="GangsterVixen.jpg" width="300px" style="position: relative;;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                <p style="text-align:center;position: relative;">GANGSTER VIXEN</p>
+                </div>
+        </a>
+
+        <a href=" killer.html" target="_self" style="text-decoration: none;"> 
+ <div class="box" id="box6" style="flex-direction:column; justify-content: center;align-items: center; margin-left:30px;width:300px">
+                    <img src="Killer.jpg" width="300px" style="position: relative;;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                    <p style="text-align:center;position: relative;">KILLER</p>
+                    </div>
+        </a>
+
+        <a href=" romancers.html" target="_self" style="text-decoration: none;"> 
+<div class="box" id="box7" style="flex-direction:column; justify-content: center;align-items: center; margin-left:30px;width:300px">
+         <img src="Romancers.jpg" width="300px" style="position: relative;;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                        <p style="text-align:center;position: relative;text-decoration: none;">ROMANCER'S FLIGHT</p>
+                        </div>
+        </a>
+
+
+
+    </div>
+
+
+    <div style="display: flex;justify-content: center;color:white; flex-direction: column; align-items: center;">
+<p class="hover-effect" style=" font-family: caudex;font-size: 30px;">To Contact Me</p>
+<a href="home.html" target="_self">
+<button class="neon-button">CLICK HERE</button>
+</a>
+    </div>
+</body>
+</html>

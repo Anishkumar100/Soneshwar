@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+   
+
+#navcenter {
+    text-align: center; /* Ensures the navbar is centered */
+}
+
+.nav-list {
+    color: rgb(252, 238, 252);
+    display: flex;
+    font-size: 30px;
+    font-family: 'Bungee Shade', cursive;
+    gap: 30px;
+    list-style: none; /* Removes the bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.navcontent {
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease; /* Adds smooth transition for color and transform */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    margin-right: 30px; /* Ensures the right margin for spacing */
+}
+
+.navcontent:hover {
+    color: #ff0000; /* Changes text color on hover */
+    transform: scale(1.1); /* Slightly scales up the text */
+}
+
+/* Optional: Style the links to remove default styling */
+.nav-list a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.hover-effect {
+            display: inline-block;
+            position: relative;
+            
+            text-decoration: none;
+            padding-bottom: 2px; /* Adjust padding to your preference */
+        }
+
+        .hover-effect::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            
+            height: 2px; /* Height of the underline */
+            background-color: #ff0000;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .hover-effect:hover::after {
+            width: 100%;
+        }
+
+        @media screen and (max-width:600px)
+        {
+            #navbar
+            {
+                width:380px;
+                justify-content: start;
+                flex-wrap: wrap;
+                
+            }
+            #navbegimg
+            {
+                width:300px;
+            }
+
+            #maintext
+            {
+               display: none;
+                font-size: 20px;
+            }
+            #mainimg
+            {
+                display: none;
+                width:300px
+            }
+
+            #about
+            {
+                flex-wrap: wrap;
+                font-size: 12px;
+            }
+
+            #stimg
+            {
+                width: 100px;
+                margin-left:0px;
+            }
+
+            #ndpara
+            {
+                flex-wrap: wrap;
+                font-size:12px;
+
+            }
+            #ndimg
+            {
+                width:100px;
+              
+                
+            }
+            #ndtext
+            {
+                margin-left:0px
+            }
+
+            #rdpara
+            {
+                flex-wrap: wrap;
+                font-size:12px;
+
+            }
+
+            
+            #lastpara
+            {
+                flex-wrap: wrap;
+                font-size:6px;
+
+            }
+
+            #lasttext
+            {
+                text-align: start;
+                margin-left:0px;
+           
+            }
+
+            #lastimg
+            {
+                width:100px
+            }
+            
+        }
+</style>
+<body style="margin:0px;background-color: black;">
+<div   style="position: fixed; width:1350px">
+    <div  id="navbar" style="background-color: rgb(0, 0, 0); opacity:0.8; display: flex; justify-content:space-between;align-items:center;gap:30px; ">
+        <div >
+          <img id="navbegimg" src="Sonelogo.png" style="width:400px;height:60px;position:sticky">
+        </div>
+
+        <div id="navcenter" style="margin-bottom:20px">
+           <ul class="nav-list" style="color:rgb(252, 238, 252); display: flex;font-size: 20px; font-family:caudex; gap:30px; ">
+            <a href="#about" target="_self">
+            <li class="navcontent" style="display: inline-block;">About</li></a>
+            <a href="music.html" target="_self">
+            <li class="navcontent"style="display: inline-block;">Music</li>
+            </a>
+            <a href="#contact" target="_self">
+            <li class="navcontent" style="display:inline-block;margin-right:30px">Contact</li></a>
+           </ul>
+        </div>
+  
+
+       
+    </div>
+</div>
+
+
+<div >
+    <img id="mainimg"src="concertimg2.jpg"  style=" width:1350px; height:800px;position: relative;z-index:-1 ">
+
+    <p id="maintext" style=" color:rgb(255, 255, 255);font-size:50px; text-align: center;font-family:Rubik Dirt;z-index:2;letter-spacing: 2px;position:relative;bottom:500px"> A<br><span style="color:rgb(255, 0, 0);font-size:70px;text-align: center;font-family: lol;margin-top:0px;letter-spacing: 10px;">SONESHWAR RAGUVENDRAN</span> MUSICAL</p>
+   
+</div>
+
+<div style="margin-top:30px;">
+   
+   <p></p>
+   
+
+</div>
+<!--1st para-->
+<div id="about" style="display: flex;color:white;gap:30px;margin-top: 0px;justify-content:evenly;align-items:flex-start;font-family:caudex;">
+    <img id="stimg"src="soneshwar2.jpg" width="350px" style=" flex-grow: 1;margin-left:30px;">
+    <p style="color:white;flex-grow: 1; font-size: 30px;margin-right: 30px; margin-top: 60px;">S. B. Soneshwar, born on January 29, 2004, in the vibrant city of Vellore, is a dynamic and passionate individual, juggling two demanding yet immensely rewarding pursuits. As a burgeoning music composer, Soneshwar's artistic journey is marked by a relentless passion for music that transcends genres and cultural boundaries. Simultaneously, he is dedicatedly pursuing a doctorate in dental surgery, demonstrating a remarkable blend of creativity and academic rigor.<br><br>From an early age, Soneshwar was captivated by the enchanting world of music. His father, K. Suresh Kumar, and mother, Bindhu Suresh Kumar, have always been supportive of his musical aspirations, fostering an environment that encouraged his artistic growth. Inspired by legendary composers like Anirudh Ravichander and A. R. Rahman, Soneshwar's compositions reflect a deep respect for these icons, while also showcasing his unique voice.</p>
+</div>
+
+<!--2nd para-->
+<div id="ndpara" style="display: flex;color:white;gap:30px;margin-top: 100px;justify-content:evenly;align-items:flex-start;font-family: caudex; ">
+  
+    <p id="ndtext" style="color:white;flex-grow: 1; font-size: 30px;margin-left: 30px; ">What sets Soneshwar apart is his versatility in music. He revels in exploring all genres, from classical to contemporary, and from soulful ballads to electrifying pop. This eclectic taste in music allows him to infuse his compositions with a rich tapestry of sounds and emotions. His ability to seamlessly blend different musical elements is a testament to his creativity and technical prowess. For Soneshwar, music is not just a hobby but a profound form of expression, a way to communicate emotions and stories that resonate with a diverse audience.<br><br>
+
+        One of Soneshwar's primary aspirations is to compose scores for films, a dream that reflects his love for storytelling through music. He believes that a powerful soundtrack can elevate a film, adding depth and dimension to the narrative. Regardless of the genre, be it a gripping thriller, a heartwarming romance, or an epic drama, Soneshwar is eager to create music that enhances the cinematic experience. His compositions are characterized by their emotive quality and their ability to transport listeners into the world of the film..</p>
+
+    <img id="ndimg" src="soneshwar.jpg" width="300px" style=" flex-grow: 1;margin-top:30px">
+</div>
+
+<!--3rd para-->
+<div id="rdpara" style="display: flex;color:white;gap:30px;margin-top: 100px;justify-content:evenly;align-items:flex-start;font-family: caudex; ">
+
+    <img src="soneshwar5.jpg" width="350px" style=" flex-grow: 1;">
+  
+    
+  
+        <p style="color:white;flex-grow: 1; font-size: 30px;margin-right: 30px;margin-top:0px">What sets Soneshwar apart is his versatility in music. He revels in exploring all genres, from classical to contemporary, and from soulful ballads to electrifying pop. This eclectic taste in music allows him to infuse his compositions with a rich tapestry of sounds and emotions. His ability to seamlessly blend different musical elements is a testament to his creativity and technical prowess. For Soneshwar, music is not just a hobby but a profound form of expression, a way to communicate emotions and stories that resonate with a diverse audience.<br><br>
+    
+            One of Soneshwar's primary aspirations is to compose scores for films, a dream that reflects his love for storytelling through music. He believes that a powerful soundtrack can elevate a film, adding depth and dimension to the narrative. Regardless of the genre, be it a gripping thriller, a heartwarming romance, or an epic drama, Soneshwar is eager to create music that enhances the cinematic experience. His compositions are characterized by their emotive quality and their ability to transport listeners into the world of the film..</p>
+    
+       
+ </div>
+
+
+ <div id="lastpara" style="display: flex;color:white;gap:30px;margin-top: 100px;justify-content:evenly;align-items:flex-start; background-color:rgba(159,1,27,255);font-family: caudex; ">
+
+    <p id="lasttext" style="color:white;flex-grow: 1; font-size: 30px;margin-left: 30px;">Soneshwar's story is one of passion, perseverance, and a deep love for both art and science. He exemplifies the belief that one can pursue multiple interests and excel in them. His journey is a testament to the power of dedication and the importance of nurturing one's talents, no matter how diverse they may be. As he continues to compose, study, and grow, Soneshwar remains a beacon of inspiration for aspiring artists and students alike, proving that with hard work and a clear vision, one can indeed achieve greatness in multiple fields.</p>
+
+    <img id="lastimg"src="soneshwar4.jpg"width="450px" style=" flex-grow: 1;">
+ </div>
+
+
+ <div id="contact" style="text-align: center;color:rgb(255, 255, 255);margin-top: 100px;gap:10px;font-family: caudex;">
+<p style="color:white; font-size:30px">CONTACT</p>
+<br>
+<div style="display: flex;text-align: center;justify-content: center;align-items: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" id="gmail"><path fill="#ea4435" d="M16.58,19.1068l-12.69-8.0757A3,3,0,0,1,7.1109,5.97l9.31,5.9243L24.78,6.0428A3,3,0,0,1,28.22,10.9579Z"></path><path fill="#00ac47" d="M25.5,5.5h4a0,0,0,0,1,0,0v18a3,3,0,0,1-3,3h0a3,3,0,0,1-3-3V7.5a2,2,0,0,1,2-2Z" transform="rotate(180 26.5 16)"></path><path fill="#ffba00" d="M29.4562,8.0656c-.0088-.06-.0081-.1213-.0206-.1812-.0192-.0918-.0549-.1766-.0823-.2652a2.9312,2.9312,0,0,0-.0958-.2993c-.02-.0475-.0508-.0892-.0735-.1354A2.9838,2.9838,0,0,0,28.9686,6.8c-.04-.0581-.09-.1076-.1342-.1626a3.0282,3.0282,0,0,0-.2455-.2849c-.0665-.0647-.1423-.1188-.2146-.1771a3.02,3.02,0,0,0-.24-.1857c-.0793-.0518-.1661-.0917-.25-.1359-.0884-.0461-.175-.0963-.267-.1331-.0889-.0358-.1837-.0586-.2766-.0859s-.1853-.06-.2807-.0777a3.0543,3.0543,0,0,0-.357-.036c-.0759-.0053-.1511-.0186-.2273-.018a2.9778,2.9778,0,0,0-.4219.0425c-.0563.0084-.113.0077-.1689.0193a33.211,33.211,0,0,0-.5645.178c-.0515.022-.0966.0547-.1465.0795A2.901,2.901,0,0,0,23.5,8.5v5.762l4.72-3.3043a2.8878,2.8878,0,0,0,1.2359-2.8923Z"></path><path fill="#4285f4" d="M5.5,5.5h0a3,3,0,0,1,3,3v18a0,0,0,0,1,0,0h-4a2,2,0,0,1-2-2V8.5a3,3,0,0,1,3-3Z"></path><path fill="#c52528" d="M2.5439,8.0656c.0088-.06.0081-.1213.0206-.1812.0192-.0918.0549-.1766.0823-.2652A2.9312,2.9312,0,0,1,2.7426,7.32c.02-.0475.0508-.0892.0736-.1354A2.9719,2.9719,0,0,1,3.0316,6.8c.04-.0581.09-.1076.1342-.1626a3.0272,3.0272,0,0,1,.2454-.2849c.0665-.0647.1423-.1188.2147-.1771a3.0005,3.0005,0,0,1,.24-.1857c.0793-.0518.1661-.0917.25-.1359A2.9747,2.9747,0,0,1,4.3829,5.72c.089-.0358.1838-.0586.2766-.0859s.1853-.06.2807-.0777a3.0565,3.0565,0,0,1,.357-.036c.076-.0053.1511-.0186.2273-.018a2.9763,2.9763,0,0,1,.4219.0425c.0563.0084.113.0077.169.0193a2.9056,2.9056,0,0,1,.286.0888,2.9157,2.9157,0,0,1,.2785.0892c.0514.022.0965.0547.1465.0795a2.9745,2.9745,0,0,1,.3742.21A2.9943,2.9943,0,0,1,8.5,8.5v5.762L3.78,10.9579A2.8891,2.8891,0,0,1,2.5439,8.0656Z"></path></svg>
+    <a href="https://mail.google.com/mail/u/0/#inbox" target="_self">
+<p class="hover-effect " style="color:white; font-size:20px">soneshwar2922@gmail.com</p></a>
+</div>
+<br>
+<div  style="display: flex;text-align: center;justify-content: center;align-items: center;">
+<img src="Reilly (@ReillyAsaa) on X.jpeg" width="50px">
+<a href="https://www.instagram.com/" target="_self">
+<p class="hover-effect " style="color:white; font-size:20px">soneshwar_2901</p></a>
+ </div>
+ </div>
+
+
+
+    
+</body>
+</html>
